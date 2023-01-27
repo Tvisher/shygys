@@ -39,7 +39,6 @@ document.body.addEventListener('click', (e) => {
     if (target.closest('[data-burger-menu]')) {
         target.closest('[data-burger-menu]').classList.toggle('active');
         document.querySelector('[data-header-menu]').classList.toggle('active');
-        document.body.classList.toggle('hidden');
     }
     if (target.closest('[data-close-modal]')) {
         const closeBtn = target.closest('[data-close-modal]');
