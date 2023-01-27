@@ -55,7 +55,12 @@ document.body.addEventListener('click', (e) => {
         const modalBtn = target.closest('[data-open-modal]');
         const modalId = modalBtn.dataset.openModal;
         document.querySelector(`[data-modal="${modalId}"]`).classList.add('show');
+    }
 
+    if (target.closest('[data-mob-link]')) {
+        setTimeout(() => {
+            document.querySelector('[data-header-menu]').classList.remove('active');
+        }, 350);
     }
 
 
