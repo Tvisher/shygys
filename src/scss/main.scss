@@ -481,7 +481,6 @@ body {
 }
 
 .about__wrapper {
-  flex-wrap: wrap;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -687,6 +686,10 @@ body {
 }
 
 @media (max-width: 1180px) {
+  .about__wrapper {
+    flex-wrap: wrap;
+  }
+
   .section-title {
     text-align: center;
   }
